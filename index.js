@@ -92,7 +92,7 @@ function createRock(x) {
        if (checkCollision(rock)){
          endGame()
        }
-       if (top < GAME_HEIGHT) {
+       else if (top < GAME_HEIGHT) {
          rock.style.top = `${top += 2}px`
          window.requestAnimationFrame(step)
        } else {
