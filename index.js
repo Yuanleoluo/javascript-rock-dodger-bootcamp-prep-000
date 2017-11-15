@@ -97,12 +97,12 @@ function createRock(x) {
           GAME.removeChild(rock)
        }
      }
-     
+
      if (checkCollision(rock)){
        endGame()
      }
         window.requestAnimationFrame(step)
-        
+
     /**
      * But if the rock *has* reached the bottom of the GAME,
      * we should remove the rock from the DOM
